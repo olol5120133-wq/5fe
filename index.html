@@ -1,0 +1,118 @@
+sudo bash -c 'printf "\xEF\xBB\xBF" > /var/www/html/index.html && cat << "EOF" >> /var/www/html/index.html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سنتر ابل</title>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #ffffff;
+            font-family: Tahoma, Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border-bottom: 4px solid #38bdf8;
+        }
+        h1 {
+            color: #38bdf8;
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        p {
+            color: #cbd5e1;
+            font-size: 1.1rem;
+        }
+        .box {
+            background: #1e293b;
+            padding: 20px;
+            margin: 15px auto;
+            max-width: 600px;
+            border-radius: 10px;
+            border: 1px solid #334155;
+        }
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .card {
+            background: #1e293b;
+            padding: 15px;
+            width: 200px;
+            border-radius: 10px;
+            border: 1px solid #334155;
+        }
+        .card h3 {
+            color: #38bdf8;
+        }
+        .contact-box {
+            background: #1e293b;
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 600px;
+            border-radius: 10px;
+            border: 1px solid #38bdf8;
+        }
+        .phone-btn {
+            display: inline-block;
+            background: #22c55e;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>سنتر ابل</h1>
+        <p>عالم الهواتف والتقنية والصيانة</p>
+    </header>
+
+    <div class="box">
+        <h2>أهلاً وسهلاً بكم في سنتر ابل!</h2>
+        <p>نسعد بخدمتكم وتوفير أفضل الأجهزة والإكسسوارات وحلول الصيانة.</p>
+    </div>
+
+    <div class="services">
+        <div class="card">
+            <h3>موبايلات جديدة</h3>
+            <p>أحدث الإصدارات الأصلية بضمان.</p>
+        </div>
+        <div class="card">
+            <h3>موبايلات مستعملة</h3>
+            <p>أجهزة بحالة النظيف مفحوصة.</p>
+        </div>
+        <div class="card">
+            <h3>إكسسوارات</h3>
+            <p>كفرات، شواحن وسماعات أصلية.</p>
+        </div>
+        <div class="card">
+            <h3>صيانة</h3>
+            <p>تصليح وفحص فوري ودقيق.</p>
+        </div>
+    </div>
+
+    <div class="contact-box">
+        <h3>📍 تفاصيل العنوان والتواصل</h3>
+        <p><strong>العنوان:</strong> مدينة الصدر - الأورفلي - مجاور مقبلات أبو ليث</p>
+        <a href="tel:07745447665" class="phone-btn">📞 إتصل بنا: 07745447665</a>
+    </div>
+
+</body>
+</html>
+EOF'
